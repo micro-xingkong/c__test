@@ -141,6 +141,7 @@
     <ClCompile Include="水仙花数.cpp" />
     <ClCompile Include="敲桌子.cpp" />
     <ClCompile Include="嵌套循环.cpp" />
+    <ClCompile Include="结构体排序.cpp" />
     <ClCompile Include="结构体案例.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
