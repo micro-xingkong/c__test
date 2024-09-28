@@ -13,46 +13,55 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\第二">
+      <UniqueIdentifier>{4107564a-e009-48e7-be22-23a778783d4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\第一">
+      <UniqueIdentifier>{6b982080-c243-416c-84d8-e73625a746a4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Helloworld.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="数据类型.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="水仙花数.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="敲桌子.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="嵌套循环.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\第一</Filter>
     </ClCompile>
     <ClCompile Include="xin.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="数组.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="数组倒置.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="冒泡排序.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\第一</Filter>
     </ClCompile>
     <ClCompile Include="二维数组.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\第一</Filter>
+    </ClCompile>
+    <ClCompile Include="冒泡排序.cpp">
+      <Filter>源文件\第一</Filter>
+    </ClCompile>
+    <ClCompile Include="嵌套循环.cpp">
+      <Filter>源文件\第一</Filter>
+    </ClCompile>
+    <ClCompile Include="敲桌子.cpp">
+      <Filter>源文件\第一</Filter>
+    </ClCompile>
+    <ClCompile Include="数据类型.cpp">
+      <Filter>源文件\第一</Filter>
+    </ClCompile>
+    <ClCompile Include="数组.cpp">
+      <Filter>源文件\第一</Filter>
+    </ClCompile>
+    <ClCompile Include="数组倒置.cpp">
+      <Filter>源文件\第一</Filter>
+    </ClCompile>
+    <ClCompile Include="水仙花数.cpp">
+      <Filter>源文件\第一</Filter>
     </ClCompile>
     <ClCompile Include="指针.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\第一</Filter>
     </ClCompile>
     <ClCompile Include="指针和函数.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\第一</Filter>
     </ClCompile>
     <ClCompile Include="指针数组很熟.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\第一</Filter>
+    </ClCompile>
+    <ClCompile Include="01结构体.cpp">
+      <Filter>源文件\第二</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

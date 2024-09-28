@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="01结构体.cpp" />
     <ClCompile Include="Helloworld.cpp" />
     <ClCompile Include="xin.cpp" />
     <ClCompile Include="二维数组.cpp" />
