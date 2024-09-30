@@ -76,6 +76,27 @@ void AddPeople(struct TongXunLu abs[]) {
 			goto flage;
 		}
 
+		//年龄
+		cout << "请输入年龄：" << endl;
+		int age = 0;
+		cin >> age;
+		abs->arr[abs->Num].age = age;
+
+		//电话
+		cout << "请输入电话：" << endl;
+		string phone = {};
+		cin >> phone;
+		abs->arr[abs->Num].Phone = phone;
+
+
+		//地址
+		cout << "清除输入地址" << endl;
+		string Adder = {};
+		cin >> Adder;
+		abs->arr[abs->Num].Addr = Adder;
+		//更新人数
+		abs->Num++;
+		system("cls");
 	}
 
 
