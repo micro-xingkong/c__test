@@ -1,11 +1,11 @@
 #include<iostream>
 #include<string>
-#include "é€šè®¯å½•ç®¡ç†ç³»ç»Ÿ.h"
+
 using namespace std;
 
 #define MAX 1000
 
-//è”ç³»äºº
+//ÁªÏµÈË
 struct People {
 	string name;
 	int sex;
@@ -13,42 +13,42 @@ struct People {
 	string Phone;
 	string Addr;
 };
-//é€šè®¯å½•
+//Í¨Ñ¶Â¼
 struct TongXunLu {
-	//è”ç³»äºº
+	//ÁªÏµÈË
 	struct People arr[MAX];
-	//è”ç³»äººä¸ªæ•°
+	//ÁªÏµÈË¸öÊı
 	int Num;
 };
 
 
-//æ·»åŠ 
+//Ìí¼Ó
 void AddPeople(struct TongXunLu abs[]) {
 
-	//åˆ¤æ–­æ˜¯å¦èƒ½æ·»åŠ 
+	//ÅĞ¶ÏÊÇ·ñÄÜÌí¼Ó
 	if (abs->Num >= MAX)
 	{
-		cout << "é€šè®¯å½•å·²æ»¡" << endl;
+		cout << "Í¨Ñ¶Â¼ÒÑÂú" << endl;
 		return;
 	}
 	else
 	{
-		//å§“å
+		//ĞÕÃû
 		string Name;
-		cout << "è¯·è¾“å…¥å§“åï¼š" << endl;
+		cout << "ÇëÊäÈëĞÕÃû£º" << endl;
 		cin >> Name;
 		abs->arr[abs->Num].name = Name;
 
-		//æ€§åˆ«
+		//ĞÔ±ğ
 	flage:
-		cout << "è¯·è¾“å…¥æ€§åˆ«ï¼š" << endl;
-		cout << "1 â€”â€”â€”â€” ç”·" << endl;
-		cout << "2 â€”â€”â€”â€” å¥³" << endl;
+		cout << "ÇëÊäÈëĞÔ±ğ£º" << endl;
+		cout << "1 ¡ª¡ª¡ª¡ª ÄĞ" << endl;
+		cout << "2 ¡ª¡ª¡ª¡ª Å®" << endl;
 
 		int sex = 0;
-		//å¹´é¾„è¾“å…¥æœ‰è¯¯
-	
-		
+		//ÄêÁäÊäÈëÓĞÎó
+
+
 		cin >> sex;
 		/*sex = cin.get()*/;
 
@@ -62,39 +62,39 @@ void AddPeople(struct TongXunLu abs[]) {
 			break;
 		default:
 			goto flage;
-			
+
 		}*/
-		
+
 		if ((int)sex == 1 || (int)sex == 2)
 		{
 			abs->arr[abs->Num].sex = (int)sex;
 		}
 		else {
-			cout << "æ‚¨è¾“å…¥æœ‰è¯¯" << endl;
+			cout << "ÄúÊäÈëÓĞÎó" << endl;
 			cin.clear();
 			cin.ignore();
 			goto flage;
 		}
 
-		//å¹´é¾„
-		cout << "è¯·è¾“å…¥å¹´é¾„ï¼š" << endl;
+		//ÄêÁä
+		cout << "ÇëÊäÈëÄêÁä£º" << endl;
 		int age = 0;
 		cin >> age;
 		abs->arr[abs->Num].age = age;
 
-		//ç”µè¯
-		cout << "è¯·è¾“å…¥ç”µè¯ï¼š" << endl;
+		//µç»°
+		cout << "ÇëÊäÈëµç»°£º" << endl;
 		string phone = {};
 		cin >> phone;
 		abs->arr[abs->Num].Phone = phone;
 
 
-		//åœ°å€
-		cout << "æ¸…é™¤è¾“å…¥åœ°å€" << endl;
+		//µØÖ·
+		cout << "Çå³ıÊäÈëµØÖ·" << endl;
 		string Adder = {};
 		cin >> Adder;
 		abs->arr[abs->Num].Addr = Adder;
-		//æ›´æ–°äººæ•°
+		//¸üĞÂÈËÊı
 		abs->Num++;
 		system("cls");
 	}
@@ -102,23 +102,33 @@ void AddPeople(struct TongXunLu abs[]) {
 
 }
 
+
+void ShowPeople(struct TongXunLu abs[]) {
+	for (int i = 0; i < abs->Num; i++)
+	{
+		cout << "ĞÕÃû£º" << abs->arr[i].name << " ĞÔ±ğ£º" << abs->arr[i].sex
+			<< " ÄêÁä£º" << abs->arr[i].age << " µç»°£º" << abs->arr[i].Phone
+			<< " µØÖ·£º" << abs->arr[i].Addr << endl;
+	}
+}
+
 void shouMenu() {
 	cout << "*************************" << endl;
-	cout << "***** 1ã€æ·»åŠ è”ç³»äºº *****" << endl;
-	cout << "***** 2ã€æ˜¾ç¤ºè”ç³»äºº *****" << endl;
-	cout << "***** 3ã€åˆ é™¤è”ç³»äºº *****" << endl;
-	cout << "***** 4ã€æŸ¥æ‰¾è”ç³»äºº *****" << endl;
-	cout << "***** 5ã€ä¿®æ”¹è”ç³»äºº *****" << endl;
-	cout << "***** 6ã€æ¸…ç©ºè”ç³»äºº *****" << endl;
-	cout << "***** 0ã€é€€å‡ºé€šè®¯å½• *****" << endl;
+	cout << "***** 1¡¢Ìí¼ÓÁªÏµÈË *****" << endl;
+	cout << "***** 2¡¢ÏÔÊ¾ÁªÏµÈË *****" << endl;
+	cout << "***** 3¡¢É¾³ıÁªÏµÈË *****" << endl;
+	cout << "***** 4¡¢²éÕÒÁªÏµÈË *****" << endl;
+	cout << "***** 5¡¢ĞŞ¸ÄÁªÏµÈË *****" << endl;
+	cout << "***** 6¡¢Çå¿ÕÁªÏµÈË *****" << endl;
+	cout << "***** 0¡¢ÍË³öÍ¨Ñ¶Â¼ *****" << endl;
 	cout << "*************************" << endl;
 }
 
 int main() {
 
-	//åˆ›å»ºé€šè®¯å½•ç»“æ„ä½“å˜é‡
+	//´´½¨Í¨Ñ¶Â¼½á¹¹Ìå±äÁ¿
 	struct TongXunLu abs;
-	//åˆå§‹åŒ–é€šè®¯å½•ä¸­çš„äºº
+	//³õÊ¼»¯Í¨Ñ¶Â¼ÖĞµÄÈË
 	abs.Num = 0;
 
 	int in = 0;
@@ -131,27 +141,27 @@ int main() {
 
 		switch (in)
 		{
-		case 1:		//1ã€æ·»åŠ è”ç³»äºº
+		case 1:		//1¡¢Ìí¼ÓÁªÏµÈË
 			AddPeople(&abs);
 			break;
-		case 2:		//2ã€æ˜¾ç¤ºè”ç³»äºº
+		case 2:		//2¡¢ÏÔÊ¾ÁªÏµÈË
+			ShowPeople(&abs);
+			break;
+		case 3:		//3¡¢É¾³ıÁªÏµÈË
 
 			break;
-		case 3:		//3ã€åˆ é™¤è”ç³»äºº
+		case 4:		//4¡¢²éÕÒÁªÏµÈË
 
 			break;
-		case 4:		//4ã€æŸ¥æ‰¾è”ç³»äºº
+		case 5:		//5¡¢ĞŞ¸ÄÁªÏµÈË
 
 			break;
-		case 5:		//5ã€ä¿®æ”¹è”ç³»äºº
+		case 6:		//6¡¢Çå¿ÕÁªÏµÈË	
 
 			break;
-		case 6:		//6ã€æ¸…ç©ºè”ç³»äºº	
+		case 0:		//0¡¢ÍË³öÍ¨Ñ¶Â¼
 
-			break;
-		case 0:		//0ã€é€€å‡ºé€šè®¯å½•
-
-			cout << "æ¬¢è¿ä½¿ç”¨é€šè®¯å½•ç®¡ç†ç³»ç»Ÿ" << endl;
+			cout << "»¶Ó­Ê¹ÓÃÍ¨Ñ¶Â¼¹ÜÀíÏµÍ³" << endl;
 
 			exit(1);
 			break;
